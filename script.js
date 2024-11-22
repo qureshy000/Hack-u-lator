@@ -1,5 +1,4 @@
- 
-function appendToDisplay(value) {
+ function appendToDisplay(value) {
     const display = document.getElementById('display');
     if (display.value === "0" || display.value === "Error") {
         display.value = value;
@@ -32,16 +31,4 @@ function calculateResult() {
     } catch (error) {
         display.value = "Error"; // Show error if the calculation fails
     }
-}
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
 }
