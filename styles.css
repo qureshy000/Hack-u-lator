@@ -1,15 +1,21 @@
 body {
-    font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text color */
+    background-color: #0a0a0a; /* Dark background for contrast */
+    background-image: 
+        radial-gradient(circle at 20% 20%, #1a1a1a 1px, transparent 1px),
+        radial-gradient(circle at 80% 80%, #1a1a1a 1px, transparent 1px),
+        linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+        linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
 }
 
 #calculator {
-    background: #1e1e1e; /* Darker background for the calculator */
+    background: rgba(30, 30, 30, 0.9); /* Slightly transparent background for the calculator */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -52,5 +58,3 @@ button:hover {
 button:active {
     background-color: #666; /* Even darker background when pressed */
 }
- 
-
