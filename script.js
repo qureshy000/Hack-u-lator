@@ -1,14 +1,23 @@
  function appendToDisplay(value) {
     const display = document.getElementById('display');
     if (display.value === "0" || display.value === "Error") {
-        display.value = value;
+        display.value = value; // Replace 0 or Error with the new value
     } else {
-        display.value += value;
+        display.value += value; // Append the value to the display
     }
 }
 
 function clearDisplay() {
-    document.getElementById('display').value = "0";
+    document.getElementById('display').value = "0"; // Reset the display
+}
+
+function backspace() {
+    const display = document.getElementById('display');
+    if (display.value.length > 1) {
+        display.value = display.value.slice(0, -1); // Remove the last character
+    } else {
+        display.value = "0"; // Reset to 0 if nothing is left
+    }
 }
 
 function calculateResult() {
@@ -16,7 +25,7 @@ function calculateResult() {
     let result;
 
     try {
-        result = eval(display.value);
+        result = eval(display.value); // Evaluate the expression
         
         // Check for specific values and display corresponding names
         if (result === 2002) {
