@@ -34,6 +34,8 @@ function calculateResult() {
             display.value = 'Dani';
         } else if (result === 2025) {
             display.value = 'Kaveri';
+        } else if(result === 7562) {
+         display.value = 'Amal John';
         } else {
             display.value = result; // Display the calculated result for other cases
         }
