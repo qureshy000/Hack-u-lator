@@ -1,4 +1,24 @@
- function appendToDisplay(value) {
+function encodeBase64() {
+    const display = document.getElementById('display');
+    try {
+        const encodedValue = btoa(display.value); // Encode to Base64
+        display.value = encodedValue;
+    } catch (error) {
+        display.value = "Error"; // Show error if encoding fails
+    }
+}
+
+function decodeBase64() {
+    const display = document.getElementById('display');
+    try {
+        const decodedValue = atob(display.value); // Decode from Base64
+        display.value = decodedValue;
+    } catch (error) {
+        display.value = "Error"; // Show error if decoding fails
+    }
+}
+
+function appendToDisplay(value) {
     const display = document.getElementById('display');
     if (display.value === "0" || display.value === "Error") {
         display.value = value; // Replace 0 or Error with the new value
