@@ -4,20 +4,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0a0a0a; /* Dark background for contrast */
+    background-color: #f0f0f0; /* Light background color for a professional look */
     background-image: 
-        url('https://www.linkpicture.com/q/circuit-board.jpg'); /* Digital circuit board background image */
+        url('https://www.linkpicture.com/q/modern-tech.jpg'); /* Professional theme background image */
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif; /* Ensuring a consistent font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and professional font */
 }
 
 #calculator {
-    background: rgba(30, 30, 30, 0.9); /* Slightly transparent background for the calculator */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for the calculator */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 300px; /* Fixed width for the calculator */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Fixed width for the calculator */
+    text-align: center; /* Center align text inside the calculator */
 }
 
 #display {
@@ -26,8 +27,8 @@ body {
     font-size: 28px;
     text-align: right;
     margin-bottom: 10px;
-    background-color: #333; /* Dark background for the display */
-    color: #ffffff; /* Light text color for the display */
+    background-color: #eee; /* Light background for the display */
+    color: #333; /* Dark text color for the display */
     border: none; /* Remove border */
     padding: 10px; /* Add some padding */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -43,17 +44,33 @@ button {
     margin: 5px; /* Space between buttons */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners for buttons */
-    background-color: #444; /* Button background color */
+    background-color: #0078d7; /* Button background color */
     color: #ffffff; /* Button text color */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 button:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #005a9e; /* Darker background on hover */
 }
 
 button:active {
-    background-color: #666; /* Even darker background when pressed */
+    background-color: #004080; /* Even darker background when pressed */
 }
 
+#alphabet-box {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#alphabet-box.hidden {
+    display: none; /* Hide the alphabet box */
+}
+
+#alphabet-box button {
+    width: 40px; /* Smaller width for alphabet buttons */
+    height: 40px; /* Smaller height for alphabet buttons */
+    margin: 2px; /* Space between alphabet buttons */
+}
