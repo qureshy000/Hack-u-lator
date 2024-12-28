@@ -63,6 +63,10 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 10%; /* Position the alphabet box next to the calculator */
+    transform: translateY(-50%);
 }
 
 #alphabet-box.hidden {
@@ -70,7 +74,4 @@ button:active {
 }
 
 #alphabet-box button {
-    width: 40px; /* Smaller width for alphabet buttons */
-    height: 40px; /* Smaller height for alphabet buttons */
-    margin: 2px; /* Space between alphabet buttons */
-}
+    width: 40px; /* Smaller width for alphabet buttons
