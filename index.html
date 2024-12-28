@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +13,7 @@
     <input type="text" id="display" placeholder="0" disabled />
     <div>
         <button onclick="clearDisplay()">C</button>
-        <button onclick="backspace()">←</button> <!-- Backspace button -->
+        <button onclick="backspace()">←</button>
         <button onclick="appendToDisplay('(')">(</button>
         <button onclick="appendToDisplay(')')">)</button>
         <button onclick="appendToDisplay('/')">/</button>
@@ -46,9 +47,12 @@
         <button onclick="appendToDisplay('Math.cos(')">cos</button>
         <button onclick="appendToDisplay('Math.tan(')">tan</button>
     </div>
+    <div>
+        <button onclick="encodeBase64()">E</button>
+        <button onclick="decodeBase64()">D</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-    
