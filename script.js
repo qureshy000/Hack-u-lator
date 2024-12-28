@@ -1,3 +1,12 @@
+function toggleAlphabetBox() {
+    const alphabetBox = document.getElementById('alphabet-box');
+    if (alphabetBox.classList.contains('hidden')) {
+        alphabetBox.classList.remove('hidden');
+    } else {
+        alphabetBox.classList.add('hidden');
+    }
+}
+
 function encodeBase64() {
     const display = document.getElementById('display');
     try {
